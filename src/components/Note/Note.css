@@ -1,0 +1,104 @@
+.Note {
+  min-height: 75px;
+  width: 98%;
+  border: solid 2px black;
+  background: white;
+  margin: auto;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 10px 10px 20px;
+  -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+          box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  margin: 15px 0px;
+}
+
+.Note .Note__content {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.Note input {
+  border-bottom: 1px black solid;
+  font-size: 20px;
+  font-weight: 600;
+  display: none;
+}
+
+.Note .Note__btn-wrapp {
+  width: 200px;
+  height: 75px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  -webkit-transform: translate(0, -130%);
+          transform: translate(0, -130%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.Note .Note__btn-wrapp > div {
+  cursor: pointer;
+  -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+          box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Note .Note__btn-wrapp > div > img {
+  height: 80%;
+  width: 80%;
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+
+.Note .Note__btn-wrapp .Note__edit-btn {
+  background: #8bc34b;
+  height: 75px;
+  width: 75px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.Note .Note__btn-wrapp .Note__edit-btn:hover {
+  background: #437a03;
+}
+
+.Note .Note__btn-wrapp .Note__remov-btn {
+  background: rgba(255, 62, 62, 0.699);
+  height: 75px;
+  width: 75px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.Note .Note__btn-wrapp .Note__remov-btn:hover {
+  background: red;
+}
+
+.Note:hover .Note__btn-wrapp {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+/*# sourceMappingURL=Note.css.map */

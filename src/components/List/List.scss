@@ -1,0 +1,62 @@
+.List {
+  height: 100%;
+  width: 100%;
+  padding: 5px 10px;
+  .List__header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    > div {
+      width: 250px;
+    }
+    .List__inpu-wrapp {
+      display: flex;
+      align-items: center;
+      input {
+        height: 30px;
+        border: solid 1px black;
+        border-radius: 3px;
+        padding: 5px;
+        width: 200px;
+        &::placeholder {
+          font-size: 18px;
+          font-weight: 600;
+        }
+      }
+      .List__btn {
+        width: 40px;
+        background: black;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+        font-weight: 900;
+        color: #8bc34b;
+        cursor: pointer;
+        border-radius: 10px;
+        margin-left: 5px;
+        transition: 300ms;
+        &:hover {
+          background: #8bc34b;
+          color: black;
+        }
+        &:active {
+          background: #4a6e20;
+          color: rgba(0, 0, 0, 0.5);
+        }
+      }
+    }
+    h2 {
+      font-weight: 600;
+      font-size: 25px;
+    }
+  }
+  .List__main {
+    width: 100%;
+    height: auto;
+    max-height: calc(100% - 50px);
+    overflow-y: scroll;
+  }
+}

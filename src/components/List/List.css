@@ -1,0 +1,103 @@
+.List {
+  height: 100%;
+  width: 100%;
+  padding: 5px 10px;
+}
+
+.List .List__header {
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.List .List__header > div {
+  width: 250px;
+}
+
+.List .List__header .List__inpu-wrapp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.List .List__header .List__inpu-wrapp input {
+  height: 30px;
+  border: solid 1px black;
+  border-radius: 3px;
+  padding: 5px;
+  width: 200px;
+}
+
+.List .List__header .List__inpu-wrapp input::-webkit-input-placeholder {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.List .List__header .List__inpu-wrapp input:-ms-input-placeholder {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.List .List__header .List__inpu-wrapp input::-ms-input-placeholder {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.List .List__header .List__inpu-wrapp input::placeholder {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.List .List__header .List__inpu-wrapp .List__btn {
+  width: 40px;
+  background: black;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 30px;
+  font-weight: 900;
+  color: #8bc34b;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-left: 5px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.List .List__header .List__inpu-wrapp .List__btn:hover {
+  background: #8bc34b;
+  color: black;
+}
+
+.List .List__header .List__inpu-wrapp .List__btn:active {
+  background: #4a6e20;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.List .List__header h2 {
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.List .List__main {
+  width: 100%;
+  height: auto;
+  max-height: calc(100% - 50px);
+  overflow-y: scroll;
+}
+/*# sourceMappingURL=List.css.map */
